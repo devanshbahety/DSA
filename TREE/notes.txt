@@ -1,0 +1,72 @@
+//Trees
+online test in mcq or coding form in formula based
+interview questions
+
+//node -> smallest unit of overall data structure tree
+//root -> topmost node
+//parent ->there is only one parent for one node
+//child //ancestor ->many ancestors can be there 
+//descedant -> for descendant we have to down to last
+//sibling
+//leaf node->children count= 0 node pointing to null is leaf node
+
+//level order traversal
+-> 10 20 30 40 50 60 70
+
+build Trees
+//diffeent ways to create Trees
+1. CReate using Level order traversal
+2. Revursively create Trees
+    ->create root node
+    ->left part of root will be solved by recursion root->left=recursion()
+    ->right part of root also solved by recursion root->right=recursion()
+
+    assume
+    !=-1 -> valid data where node can be created
+    ==-1 Create null return
+
+    20 30 50 -1 60 -1 -1 40 -1 -1 100 -1-1
+
+    20->30
+(-1 means null)
+buildtree(20) 
+//level order traversal
+//inorder traversal/Preorder / Postorder
+//Moris traversal
+
+Level Order traversal
+->go level wise print
+
+
+
+3. 
+
+class node{
+    int data;
+    vector<node*> child; //can add many child as i want
+}
+
+
+//INORDER(LNR)/PREORDER(NLR)/Postorder(LRN)
+L->left 
+r->right
+n->Current Node
+
+
+Balanced binary tree
+-> In each node 
+    ->left node and right node 
+    height absoulte difference 
+    is <=1
+
+    //Binary tree
+    ->child 0,1 or 2
+    //Fully(perfect) binary tree
+    ->At last there will be a leaf node
+
+    //complete binary tree
+    ->node filled from left to right
+
+    //balanced tree
+    ->
+    //Unbalanced 
